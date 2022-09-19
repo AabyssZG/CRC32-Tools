@@ -12,7 +12,7 @@ def title():
     print('+             Title: CRC-Tools,so easy!!!             +')
     print('+     python3 ReadZip.py --> ReadZip >>> Demo.zip     +')
     print('+                作者：曾哥（AabyssZG）               +')
-    print('+                  版本：V1.1优化版                   +')
+    print('+                  版本：V1.2优化版                   +')
     print('+-----------------------------------------------------+')
 
 def ReadCRC(zipname):
