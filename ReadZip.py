@@ -15,8 +15,7 @@ def title():
     print('+-----------------------------------------------------+')
 
 def ReadCRC(zipname):
-    zip_url = "./" + zipname
-    file_zip = zipfile.ZipFile(zip_url) #用zipfile读取指定的压缩包文件
+    file_zip = zipfile.ZipFile(zipname) #用zipfile读取指定的压缩包文件
     name_list = file_zip.namelist() #使用一个列表，获取并存储压缩包内所有的文件名
     crc_list = []
     print('+--------------遍历指定压缩包的CRC值----------------+')
