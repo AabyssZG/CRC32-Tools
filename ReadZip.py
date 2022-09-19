@@ -38,4 +38,4 @@ if __name__ == '__main__':
         if args.zipname:
             ReadCRC(args.zipname)
     except BaseException as e:
-        print("压缩包异常"+e)
+        print(f"压缩包异常{e}")
