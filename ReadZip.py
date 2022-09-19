@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 import requests
 import zipfile
+import argparse
 
 def title():
     print('+-----------------------------------------------------+')
@@ -30,5 +31,11 @@ def ReadCRC(zipname):
 
 if __name__ == '__main__':
     title()
-    zipname = str(input("请输入压缩包名字：\nReadZip >>> "))
-    ReadCRC(zipname)
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-z', dest='zipname', required=True, help='压缩包')
+    args = parser.parse_args()
+    try:
+        if args.zipname:
+            ReadCRC(args.zipname)
+    except BaseException as e:
+        print("压缩包异常"+e)
