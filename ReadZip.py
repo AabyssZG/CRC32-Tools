@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 import requests
 import zipfile
+import argparse
 
 def title():
     print('+-----------------------------------------------------+')
@@ -14,8 +15,7 @@ def title():
     print('+-----------------------------------------------------+')
 
 def ReadCRC(zipname):
-    zip_url = "./" + zipname
-    file_zip = zipfile.ZipFile(zip_url) #用zipfile读取指定的压缩包文件
+    file_zip = zipfile.ZipFile(zipname) #用zipfile读取指定的压缩包文件
     name_list = file_zip.namelist() #使用一个列表，获取并存储压缩包内所有的文件名
     crc_list = []
     print('+--------------遍历指定压缩包的CRC值----------------+')
@@ -30,5 +30,11 @@ def ReadCRC(zipname):
 
 if __name__ == '__main__':
     title()
-    zipname = str(input("请输入压缩包名字：\nReadZip >>> "))
-    ReadCRC(zipname)
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-z', dest='zipname', required=True, help='压缩包')
+    args = parser.parse_args()
+    try:
+        if args.zipname:
+            ReadCRC(args.zipname)
+    except BaseException as e:
+        print(f"压缩包异常{e}")
