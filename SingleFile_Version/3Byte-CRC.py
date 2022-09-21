@@ -1,6 +1,5 @@
 #!/usr/bin/python3.8
 # -*- coding: utf-8 -*-
-import requests
 import zipfile
 import binascii
 import string
