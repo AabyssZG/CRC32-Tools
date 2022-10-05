@@ -57,3 +57,6 @@ optional arguments:
 - 感谢各位师傅的关注和支持，对本项目的Demo.zip解密有惊喜哦，哈哈
 - **如果各位师傅觉得这个工具好用，麻烦给个Star，万分感谢！！！**
 - 如果在使用过程中有问题，欢迎各位师傅提issues给我哈
+
+## 项目 Star 数量统计趋势图
+[![Stargazers over time](https://starchart.cc/AabyssZG/CRC32-Tools.svg)](https://starchart.cc/AabyssZG/CRC32-Tools)
