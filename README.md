@@ -1,8 +1,6 @@
 # CRC32-Tools_整合版
 ## 一款CTFer专属的CRC碰撞全自动化脚本（单脚本整合版）
 
-[![Security Status](https://v3-hkylzjk.murphysec.com/platform3/v3/badge/1615697439533596672.svg)](https://www.murphysec.com/accept?code=2008baa4bd5e2eecec09bc860e2de389&type=1&from=2&t=2)
-
 ## 1#关于该项目
 在我们日常的CTF比赛中，通常会遇到压缩包破解的问题。其中重要的一个操作就是通过CRC碰撞来获取压缩包内小文件的内容，从而尝试解密压缩包
 而我在实际的CTF比赛中，发现常用的CRC的爆破脚本并不好用（主要是还需要一些人工操作，如果压缩包内的文件较多，非常麻烦），就萌生了自己写一个自动化CRC碰撞脚本出来的想法
