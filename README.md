@@ -60,4 +60,5 @@ optional arguments:
 - 如果在使用过程中有问题，欢迎各位师傅提issues给我哈
 
 ## 项目 Star 数量统计趋势图
-[![Stargazers over time](https://starchart.cc/AabyssZG/CRC32-Tools.svg)](https://starchart.cc/AabyssZG/CRC32-Tools)
+
+[![Star History Chart](https://api.star-history.com/svg?repos=AabyssZG/CRC32-Tools&type=Date)](https://star-history.com/#AabyssZG/CRC32-Tools&Date)
